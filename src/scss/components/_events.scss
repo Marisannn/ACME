@@ -1,0 +1,100 @@
+.events {
+  background-color: #ebebeb;
+
+  &__container {
+    padding-top: 43px;
+    @include max-width;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 56px;
+  }
+
+  &__item {
+    position: relative;
+    width: 416px;
+    height: 322px;
+    color: $white;
+    background: linear-gradient(to bottom, #1450d2 80%, #1145b4);
+    padding: 90px 40px 0 24px;
+    z-index: 1;
+    margin-bottom: 98px;
+  }
+
+  &__date {
+    font-family: $interstate;
+    width: 93px;
+    height: 86px;
+    background-color: $primary;
+    position: absolute;
+    top: -18px;
+    left: 24px;
+    flex-direction: column;
+    @include center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 20px 20px 20px;
+      border-color: transparent transparent #3b4e96 transparent;
+      left: -20px;
+      top: 0;
+      z-index: -1;
+    }
+  }
+
+  &__month {
+    font-weight: $light;
+    font-size: 16.25px;
+  }
+
+  &__day {
+    line-height: 1em;
+    font-size: 36px;
+    font-weight: $bold;
+  }
+
+  &__title {
+    margin-bottom: 2px;
+  }
+
+  &__text {
+    font-size: 15px;
+    height: 50px;
+  }
+
+  &__location {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 340px;
+    height: 52px;
+    background-color: #ebebeb;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 21px;
+    color: $black;
+    font-family: $interstate;
+    font-weight: $bold;
+    font-size: 24px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -50px;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 52px 50px;
+      border-color: transparent transparent #ebebeb transparent;
+    }
+  }
+}

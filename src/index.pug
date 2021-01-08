@@ -1,0 +1,64 @@
+extends includes/layout.pug
+block content
+  .banner
+    img.banner__image(src="/public/img/banner.jpg", alt="ACME Wealth Management Platforms")
+  section.insights
+    .insights__container
+      h3.title ACME Insights
+      .text
+        p.text__paragraph How are factors being used around the world?
+      .insights__list
+        .insights__item
+          .insights__image-container
+            img.insights__image(src="/public/img/global-factor.jpg", alt="Global Factor Investing Study")
+          h3.insights__title Global Factor#[br]Investing Study
+        .insights__item.insights__item--green
+          .insights__image-container
+            img.insights__image(src="/public/img/2019-outlook.jpg", alt="2019 Outlook")
+          h3.insights__title 2019 #[br]Outlook
+        .insights__item.insights__item--light-blue
+          .insights__image-container
+            img.insights__image(src="/public/img/capital-market.jpg", alt="Capital Market Assumptions")
+          h3.insights__title Capital Market#[br]Assumptions
+  section.contact
+    .contact__container
+      h2.contact__title Our Commitment to Professionals
+      .contact__text
+        p We help our partners deliver industry leading results with a commitment to excellence, thought-provoking insights and experienced distribution. We are laser focused on our shared goal – helping clients achieve their objectives. 
+      a.button(href="") Contact Us
+  section.events
+    .events__container
+      h3.title Upcoming Events
+      .text
+        p.text__paragraph This needs a great tagline, but I’ll fill it in later
+      .events__list
+        .events__item
+          .events__date
+            span.events__month JAN
+            span.events__day 28
+          .events__content
+            h4.events__title Insight Exchange Network
+            .events__text
+              p Join us for this conference showcasing innovation.
+            a.button.button--small(href="") Get More Insight
+          span.events__location Chicago, IL
+        .events__item
+          .events__date
+            span.events__month FEB
+            span.events__day 12
+          .events__content
+            h4.events__title Citywide Buyer’s Retreat
+            .events__text
+              p Find out how banks are responding to the changing future of interest...
+            a.button.button--small(href="") Get More Insight
+          span.events__location The Wagner, New York 
+        .events__item
+          .events__date
+            span.events__month MAY
+            span.events__day 6
+          .events__content
+            h4.events__title Research Exchange
+            .events__text
+              p Find the best online resources to help with your investments...
+            a.button.button--small(href="") Get More Insight
+          span.events__location London, England

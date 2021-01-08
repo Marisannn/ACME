@@ -1,0 +1,17 @@
+{
+  "extends": "stylelint-config-standard",
+  "ignoreFiles": [
+    "src/**/scss/generic/*.scss",
+    "src/**/scss/tools/*.scss",
+    "src/**/scss/trumps/*.scss",
+  ],
+  rules: {
+    "at-rule-no-unknown": [true, {
+      "ignoreAtRules": ["function", "if", "each", "include", "mixin"],
+    }],
+    "at-rule-empty-line-before": [always, {
+      except: ["after-same-name", "inside-block", "blockless-after-same-name-blockless", "blockless-after-blockless", "first-nested"]
+    }],
+    "no-descending-specificity": null
+  }
+}

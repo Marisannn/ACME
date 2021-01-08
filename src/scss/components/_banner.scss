@@ -1,0 +1,25 @@
+.banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 540px;
+  @include mx1366 {
+    height: 39.4vw;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+    height: 100%;
+    @include mn1920 {
+      width: 100%;
+      object-fit: cover;
+    }
+    @include mx1366 {
+      height: auto;
+      width: 140%;
+    }
+  }
+}

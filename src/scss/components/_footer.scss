@@ -1,0 +1,38 @@
+.footer {
+  background-color: #707070;
+  padding: 22px 0 25px;
+
+  &__container {
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    @include max-width;
+  }
+
+  &__info {
+    font-size: 14px;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+  }
+
+  &__social-text {
+    font-family: $interstate;
+    font-weight: $regular;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  &__social-list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__social-link {
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+  }
+}
